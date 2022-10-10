@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my form practice</title>
+	<style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+	
+		input {
+			margin-top: 2px;
+			margin-bottom: 8px;
+			border: none;
+			outline: none;
+			border-radius: 4px;
+			box-sizing: border-box;
+			background-color: whitesmoke;
+			color: black;
+			padding: 12px 20px;
+			width:100%;
+		}
+		input:focus {
+			background-color: white;
+					}
+		#ln {
+			padding-right: 6px;
+		}
+		#em {
+			padding-right: 45px;
+		}
+		label {
+		display: block;
+		padding: 5px 0px;
+		}
+        .card h1 {
+            text-align: center;
+        }
+		.card {
+		width: 40%;
+		height: inherit;
+		padding: 20px 10px;
+		background-color: gray;
+		border-radius: 9px;
+		margin: 20px auto;
+		}
+		.checkbox {
+		margin: 0px;
+		width: 3%;
+		padding: 5px;
+		}
+
+        .btndiv {
+            padding: 15px 10px 10px 10px;
+        }
+        .btndiv button{
+           border-radius: 9px;
+           padding: 10px 25px;
+           border: none;
+           font-size: 15px;
+        }
+        .btndiv button:hover{
+          background-color: blue;
+          color: white;
+        }
+       
+		@media only screen and (max-width: 820px) {
+            .card {
+		width: 80%;
+		}
+        h1 {
+	    font-size: 15px;
+	    text-align: center;
+           }
+		}
+        @media only screen and (max-width: 768px) {
+            .card {
+		width: 80%;
+		}
+        h1 {
+	    font-size: 15px;
+	    text-align: center;
+           }
+		}
+        @media only screen and (max-width: 600px) {
+        h1 {
+	    font-size: 10px;
+	    text-align: center;
+           }
+           .card {
+		width: 80%;
+		}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="card">
+        <h1>STUDENT APPLICATION FORM</h1>
+        <form>
+            <label for="firstname">FIRST NAME:</label>
+            <input type="text" name="firstname" placeholder="E.g Kwameh" size="30" required>
+            <br>
+            <label for="lastname" id="ln">LAST NAME:</label>
+            <input type="text" name="lastname" placeholder="E.g Nkrumah" size="30" required>
+            <br>
+            <label for="email" id="em">EMAIL:</label>
+            <input type="email" name="email" placeholder="E.g Nkrumah@gmail.com" size="30" required>
+            <br>
+            <label for="phone">PHONE NUM:</label>
+            <input type="tel" name="phone" placeholder="E.g +23350998765" size="30" required>
+            <br>
+            <label for="gender">GENDER:</label>
+    
+            <input type="radio" name="gender" class="checkbox" value="MALE" required>Male
+            <input type="radio" name="gender" class="checkbox" value="FEMALE">Female
+            <input type="radio" name="gender" class="checkbox" value="OTHER">Other
+            <div class="btndiv">
+                <button type="submit">SUBMIT</button>
+            </div>
+            
+            
+        </form>
+        </div>
+</div>
+	
+
+</body>
+</html>
